@@ -1,15 +1,21 @@
 import {Link} from 'react-router-dom'
 import React from 'react'
 import {useState} from 'react'
-import firebase from './Services/firebaseService'
+
 import { useEffect } from 'react'
+
+import  firebase from './Services/firebaseService'; 
+
+
 
 
 const Main = () => {
+   
     let [tokenn,setToken] = useState({
         tokene:'',
         loader:true
     });
+    
     let[isloading,setLoadind]=useState(true);
     
  useEffect(()=>{
@@ -88,8 +94,8 @@ const Main = () => {
                             {
                                 tokenn.loader ? ( <div className="spinner-border text-primary" role="status">
                                 <span className="sr-only">Loading...</span>
-                            </div>) : <div className='row'>
-                            <div className='token'>{tokenn.tokene}</div>
+                            </div>) : <div className='row justify-content-center'>
+                            <div className='col-md-6 token'>{tokenn.tokene}</div>
                             </div>
                             }
                         </div>

@@ -1,17 +1,8 @@
-/* .App {
-  text-align: center;
-  background-image: url('images/im7.png');
-  background-attachment: fixed;
-  background-position:center;
-  background-repeat: no-repeat;
-  background-size: cover;
 
-} */
 .cs{
    background-image:linear-gradient(to top , #f8b1958a ,  #f6727f80 ,  #c06c84c4  , #6c5b7bd2  , #355b7dd8  ),
 }
 .token{
-  width: 300px!important;
-  height: 300px;
-  border:2px solid black;
+  display: block;
+  overflow-x: scroll;
 }
