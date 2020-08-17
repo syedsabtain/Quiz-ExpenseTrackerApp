@@ -6,3 +6,13 @@
   display: block;
   overflow-x: scroll;
 }
+@media only screen and (max-width: 320px) {
+  .token {
+    overflow: scroll;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .token {
+    overflow: scroll;
+  }
+}
